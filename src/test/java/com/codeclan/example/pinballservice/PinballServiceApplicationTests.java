@@ -21,8 +21,10 @@ class PinballServiceApplicationTests {
 
 	@Test
 	void createPlayer() {
-		Player Allan = new Player("Allan", 750);
-		playerRepository.save(Allan);
+		Player allan = new Player("Allan", 750);
+		playerRepository.save(allan);
+		Player kev  = new Player("Kev", 1100);
+		playerRepository.save(kev);
 	}
 
 

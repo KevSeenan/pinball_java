@@ -17,7 +17,7 @@ public class Player {
 
     @Column
     private int score;
-    private ArrayList<Player> players;
+
 
     public Player() {
     }
@@ -25,7 +25,6 @@ public class Player {
     public Player(String name, int score) {
         this.name = name;
         this.score = score;
-        this.players = new ArrayList<Player>();
     }
 
     public Long getId() {
@@ -52,7 +51,5 @@ public class Player {
         this.score = score;
     }
 
-    public void removePlayer(Player player) {
-        this.players.remove(player);
-    }
+
 }
